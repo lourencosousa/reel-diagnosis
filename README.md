@@ -26,29 +26,36 @@ For your own reels you can go deeper. Connect your Instagram data (through a too
 
 ## Install
 
-**Claude Code, or the Code tab in the Claude desktop app**
+**Best: the Claude desktop app, in the Code tab**
 
-Paste this link into Claude and say "install this skill":
+This is where it can download the reel, hear the voice and read the account.
+
+1. Open the Claude desktop app on your computer and go to the Code tab.
+2. Paste this and send it:
 
 ```
-https://github.com/lourencosousa/reel-diagnosis
+Install this skill: https://github.com/lourencosousa/reel-diagnosis
 ```
 
-Or run this in a terminal:
+3. Say yes when Claude asks to approve a step.
+
+Use the desktop app, not Claude Code in the browser (claude.ai/code). The browser version runs on a computer in the cloud and forgets the skill when the session ends.
+
+It needs [ffmpeg](https://ffmpeg.org/download.html). On the first run it offers to install two free tools: yt-dlp, to download the reel, and faster-whisper, to hear the voice.
+
+Already use Claude Code in a terminal? Run:
 
 ```bash
 git clone https://github.com/lourencosousa/reel-diagnosis ~/.claude/skills/reel-diagnosis
 ```
 
-It needs [ffmpeg](https://ffmpeg.org/download.html). On the first run it offers to install two free tools: yt-dlp, to download the reel, and faster-whisper, to hear the voice.
-
 **Claude chat (claude.ai)**
 
-1. On this page, click Code, then Download ZIP.
-2. In Claude, open Customize, then Skills.
-3. Click "+", then "Create skill", then "Upload a skill", and choose the ZIP.
+1. Download [reel-diagnosis.zip](https://github.com/lourencosousa/reel-diagnosis/releases/latest/download/reel-diagnosis.zip). Don't unzip it.
+2. In Claude, open Settings, then Capabilities, and make sure code execution is on.
+3. Open Customize, then Skills. Click "+", then "Create skill", then "Upload a skill", and choose the zip.
 
-In the chat, code cannot run on your computer, so it works from screenshots of the key moments, with no sound.
+Use this zip, not GitHub's "Download ZIP" button: that one renames the folder and Claude rejects it. In the chat it cannot download reels, so it works from screenshots of the key moments, with no sound.
 
 ## Use
 
