@@ -1,0 +1,8 @@
+.DS_Store
+.env
+__pycache__/
+reel_*/
+*_reel/
+*.mp4
+*.mov
+*.m4a
